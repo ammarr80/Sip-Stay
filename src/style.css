@@ -77,15 +77,18 @@ button {
 
 #menu-btn {
     position: relative;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
+  
   background: radial-gradient(
-      91.3% 1547.18% at 8.7% 50%,
-      rgb(56, 56, 56) 0%,
-      rgba(21, 21, 21, 0.33) 60.14%,
-      rgb(63, 63, 63) 100%
-    ),
-    rgb(20, 20, 20);
-  color: white;
+    91.3% 1547.18% at 8.7% 50%,
+    #ffffff 0%,       /* bright white center */
+    #e0e0e0 50%,      /* medium light gray middle */
+    #bfbfbf 100%      /* darker gray edge for depth */
+),
+#ffffff;             /* fallback */
+color: #000;         /* black text for readability */
+border: 1px solid #ccc;  /* subtle border to define edges */
+
   width: -moz-fit-content;
   width: fit-content;
   padding: 12px 24px;
@@ -197,6 +200,6 @@ button {
   border-bottom: 2px solid rgb(197, 197, 197);
   position: absolute;
   top: 4px;                 /* adjust vertical position */
-  left: 8px;                /* adjust horizontal position */
+  left: 9px;                /* adjust horizontal position */
   transform: rotate(45deg);
 }
