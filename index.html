@@ -13,13 +13,13 @@
     <header class="text-white">
       <nav class="h-[10%] flex max-w-[90%] py-6 mx-auto justify-end mb-20">
        <div class="flex flex-col gap-1">
-        <div class="bg-white w-8 h-1 rounded"></div>
-        <div class="bg-white w-8 h-1 rounded"></div>
-        <div class="bg-white w-8 h-1 rounded"></div>
+        <div class="bg-white w-8 h-[3px] rounded"></div>
+        <div class="bg-white w-8 h-[3px] rounded"></div>
+        <div class="bg-white w-8 h-[3px] rounded"></div>
        </div>
       </nav>
  
-      <section id="hero" class="flex flex-col h-[80vh] max-w-[90%] mx-auto">
+      <section id="hero" class="flex flex-col max-w-[90%] gap-20 mx-auto">
         <div>
           <h1 class="text-5xl max-w-[9ch] font-semibold mb-3">Sip, Relax & Repeat</h1>
           <p class="text-lg leading-normal mb-10">
@@ -31,7 +31,7 @@
         </div>
 
         <!-- Check Buttons at bottom -->
-        <div class="mt-48 flex flex-col gap-2 justify-start mb-4">
+        <div class="flex flex-col gap-2 justify-start mb-4">
           <button class="app-button flex items-center gap-1 px-2 py-1  text-sm">
             <div class="checkbox w-4 h-4">
               <div class="check"></div>
@@ -55,6 +55,29 @@
 
       </section>
     </header>
+
+    <main>
+      <section id="about" class="text-black py-6 max-w-[90%] mx-auto">
+      <h2 class="text-2xl font-bold mb-2">Know About Us</h2>
+      <div class="w-full h-1 bg-gray-200 mb-6"></div>
+      <p class="text-base leading-normal mb-2 flex flex-col gap-4">
+        Founded in 2022, Sip & Stay brings the finest coffee from local roasters to your cup. We hand-select our beans and roast them in small batches for the perfect flavor.
+        <span class="font-semibold">We Provide:</span>
+      </p>
+      <ul class="text-sm list-disc list-inside space-y-1">
+        <li class="flex items-center">
+        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt=""> Freshly roasted, high-quality beans</li>
+        <li class="flex items-center">
+        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt="">Cozy and relaxing atmosphere</li>
+        <li class="flex items-center">
+        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt="">Specialty drinks you won’t find elsewhere</li>
+        <li class="flex items-center">
+        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt="">
+        Friendly and knowledgeable baristas</li>
+      </ul>
+</section>
+
+    </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>lucide.createIcons();</script>
