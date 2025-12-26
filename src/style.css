@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Funnel+Display:wght@300..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+.bg-dark {
+    background-color: #1B1B1E;
+}
+
+.bg-light {
+    background: #FBFBFB;
+}
+
+.bg-brand {
+    background-color: #9B2915;
+}
+
+body {
+    background-color: #FBFBFB;
+    font-family: "Manrope";
+}
+
+header {
+    background-image: url('./pics/hero-image.jpg');
+    height: 100vh;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  --color-primary-900: #141414;
+  --color-primary-50: #fdfdfd;
+}
+
+.container {
+  font-family: sans-serif;
+  color: #3c3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color: #1c1c1c; */
+}
+
+.button {
+  position: relative;
+  z-index: 30;
+}
+
+button {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+
+.app-button {
+  position: relative;
+  border: 1px solid transparent;
+  background: radial-gradient(
+      91.3% 1547.18% at 8.7% 50%,
+      rgb(63, 63, 63) 0%,
+      rgba(21, 21, 21, 0.33) 60.14%,
+      rgb(63, 63, 63) 100%
+    ),
+    rgb(20, 20, 20);
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 5px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#menu-btn {
+    position: relative;
+  border: 1px solid transparent;
+  background: radial-gradient(
+      91.3% 1547.18% at 8.7% 50%,
+      rgb(56, 56, 56) 0%,
+      rgba(21, 21, 21, 0.33) 60.14%,
+      rgb(63, 63, 63) 100%
+    ),
+    rgb(20, 20, 20);
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 8px;
+  /* border-radius: 9999px; */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#order-btn {
+  position: relative;
+  border: 1px solid transparent;
+  background: radial-gradient(
+      91.3% 1547.18% at 8.7% 50%,
+      #FFD600 0%,       /* bright yellow */
+      #FFEB3B 50%,      /* mid yellow */
+      #FFC107 100%      /* darker yellow for contrast */
+    ),
+    #F5F5F5;           /* subtle fallback */
+  color: #000;
+  width: fit-content;
+  padding: 9px 8px;
+  /* border-radius: 9999px; */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#order-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.app-button:hover {
+  background: radial-gradient(
+      91.3% 1547.18% at 8.7% 50%,
+      rgb(20, 20, 20) 0%,
+      rgb(63, 63, 63) 82.81%,
+      rgb(11, 11, 11) 100%
+    ),
+    rgb(63, 63, 63);
+  transition: opacity 0.25s linear 0s;
+}
+
+.app-button::before {
+  background: linear-gradient(
+    120deg,
+    var(--color-primary-900),
+    var(--color-primary-50),
+    var(--color-primary-50),
+    var(--color-primary-900),
+    var(--color-primary-900)
+  );
+}
+
+.app-button::before,
+.app-button::after {
+  content: "";
+  position: absolute;
+  border: 0px solid transparent;
+  inset: -2px;
+  box-shadow: rgb(20, 20, 20) 0px 0px 0px 2px;
+  z-index: -1;
+  border-radius: 9999px;
+  transition: opacity 0.25s linear 0s;
+}
+
+.app-button::after {
+  opacity: 0;
+  background: linear-gradient(
+    120deg,
+    var(--color-primary-900),
+    var(--color-primary-900),
+    var(--color-primary-50),
+    var(--color-primary-50),
+    var(--color-primary-50)
+  );
+}
+
+.app-button:hover::before {
+  opacity: 0;
+}
+
+.app-button:hover::after {
+  opacity: 1;
+}
+
+*,
+:after,
+:before {
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid #919191;  
+  border-radius: 50%;       /* make it circular */
+  /* background-color: #fff;  */
+  position: relative;
+}
+
+.check {
+  width: 5px;               /* short part width */
+  height: 11px;             /* long part height */
+  border-right: 2px solid rgb(197, 197, 197);
+  border-bottom: 2px solid rgb(197, 197, 197);
+  position: absolute;
+  top: 3px;                 /* adjust vertical position */
+  left: 8px;                /* adjust horizontal position */
+  transform: rotate(45deg);
+}
