@@ -69,10 +69,10 @@ button {
   color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 4px 5px;
+  padding: 8px 8px;
   border-radius: 9999px;
   cursor: pointer;
-  font-size: 12px;
+  /* font-size: px; */
 }
 
 #menu-btn {
@@ -88,7 +88,7 @@ button {
   color: white;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 9px 8px;
+  padding: 12px 14px;
   /* border-radius: 9999px; */
   cursor: pointer;
   font-size: 16px;
@@ -106,7 +106,7 @@ button {
     #F5F5F5;           /* subtle fallback */
   color: #000;
   width: fit-content;
-  padding: 9px 8px;
+  padding: 12px 14px;
   /* border-radius: 9999px; */
   cursor: pointer;
   font-size: 16px;
@@ -196,7 +196,7 @@ button {
   border-right: 2px solid rgb(197, 197, 197);
   border-bottom: 2px solid rgb(197, 197, 197);
   position: absolute;
-  top: 3px;                 /* adjust vertical position */
+  top: 4px;                 /* adjust vertical position */
   left: 8px;                /* adjust horizontal position */
   transform: rotate(45deg);
 }
