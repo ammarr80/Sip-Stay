@@ -117,6 +117,28 @@ border: 1px solid #ccc;  /* subtle border to define edges */
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+#full-menu {
+  position: relative;
+  border: 1px solid transparent;
+  background: radial-gradient(
+    91.3% 1547.18% at 8.7% 50%,
+    #414141 0%,    /* lighter dark center */
+    #000000 50%,   /* medium dark gray */
+    #1a1a1a 100%   /* near-black edge for depth */
+),
+#0a0a0a;
+        /* subtle fallback */
+  color: #fff;
+  width: fit-content;
+  padding: 14px 30px;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
 #order-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -202,4 +224,36 @@ border: 1px solid #ccc;  /* subtle border to define edges */
   top: 4px;                 /* adjust vertical position */
   left: 9px;                /* adjust horizontal position */
   transform: rotate(45deg);
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 250px;
+  margin-right: 15px;
+  padding: 20px;
+  background: #f5f1eb;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+#new-prev {
+    background-color: #fff;
+    color: #000;
+}
+
+#new-next {
+    background-color: #fff;
+    color: #000;
 }

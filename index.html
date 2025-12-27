@@ -4,35 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
     <script src="./src/script.js" defer></script>
     <title>Sip & Stay</title>
   </head>
   <body class="relative min-h-screen bg-white">
-
     <header class="text-white">
       <nav class="h-[10%] flex max-w-[90%] py-6 mx-auto justify-end mb-20">
-       <div class="flex flex-col gap-1">
-        <div class="bg-white w-8 h-[3px] rounded"></div>
-        <div class="bg-white w-8 h-[3px] rounded"></div>
-        <div class="bg-white w-8 h-[3px] rounded"></div>
-       </div>
+        <div class="flex flex-col gap-1">
+          <div class="bg-white w-8 h-[3px] rounded"></div>
+          <div class="bg-white w-8 h-[3px] rounded"></div>
+          <div class="bg-white w-8 h-[3px] rounded"></div>
+        </div>
       </nav>
- 
+
       <section id="hero" class="flex flex-col max-w-[90%] gap-20 mx-auto">
         <div>
-          <h1 class="text-5xl max-w-[9ch] font-semibold mb-3">Sip, Relax & Repeat</h1>
+          <h1 class="text-5xl max-w-[9ch] font-semibold mb-3">
+            Sip, Relax & Repeat
+          </h1>
           <p class="text-lg leading-normal mb-10">
-            Welcome to our coffee cafe, where every cup is made with care. Enjoy the smell, taste, and cozy space while you relax or meet friends.
+            Welcome to our coffee cafe, where every cup is made with care. Enjoy
+            the smell, taste, and cozy space while you relax or meet friends.
           </p>
 
-          <a href="" id="menu-btn" class="rounded active:scale-95 font-semibold transition-all duration-400">View Menu</a>
-          <a href="" id="order-btn" class="rounded active:scale-95 transition-all duration-400">Order Now</a>
+          <a
+            href=""
+            id="menu-btn"
+            class="rounded active:scale-95 font-semibold transition-all duration-400"
+            >View Menu</a
+          >
+          <a
+            href=""
+            id="order-btn"
+            class="rounded active:scale-95 transition-all duration-400"
+            >Order Now</a
+          >
         </div>
 
         <!-- Check Buttons at bottom -->
         <div class="flex flex-col gap-2 justify-start mb-4">
-          <button class="app-button flex items-center gap-1 px-2 py-1  text-sm">
+          <button class="app-button flex items-center gap-1 px-2 py-1 text-sm">
             <div class="checkbox w-4 h-4">
               <div class="check"></div>
             </div>
@@ -52,34 +64,183 @@
             Good Delivery Time
           </button>
         </div>
-
       </section>
     </header>
 
     <main>
       <section id="about" class="text-black py-6 max-w-[90%] mx-auto">
-      <h2 class="text-2xl font-bold mb-2">Know About Us</h2>
-      <div class="w-full h-1 bg-gray-200 mb-6"></div>
-      <p class="text-base leading-normal mb-2 flex flex-col gap-4">
-        Founded in 2022, Sip & Stay brings the finest coffee from local roasters to your cup. We hand-select our beans and roast them in small batches for the perfect flavor.
-        <span class="font-semibold">We Provide:</span>
-      </p>
-      <ul class="text-sm list-disc list-inside space-y-1">
-        <li class="flex items-center">
-        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt=""> Freshly roasted, high-quality beans</li>
-        <li class="flex items-center">
-        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt="">Cozy and relaxing atmosphere</li>
-        <li class="flex items-center">
-        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt="">Specialty drinks you won’t find elsewhere</li>
-        <li class="flex items-center">
-        <img src="./src/pics/li-dot.png" class="w-7 h-7 object-cover rotate-270" alt="">
-        Friendly and knowledgeable baristas</li>
-      </ul>
-</section>
+        <h2 class="text-2xl font-bold mb-2">Know About Us</h2>
+        <div class="w-full h-1 bg-gray-200 mb-6"></div>
+        <p class="text-base leading-normal mb-2 flex flex-col gap-4">
+          Founded in 2022, Sip & Stay brings the finest coffee from local
+          roasters to your cup. We hand-select our beans and roast them in small
+          batches for the perfect flavor.
+          <span class="font-semibold">We Provide:</span>
+        </p>
+        <ul class="text-sm list-disc list-inside space-y-1">
+          <li class="flex items-center">
+            <img
+              src="./src/pics/li-dot.png"
+              class="w-7 h-7 object-cover rotate-270"
+              alt=""
+            />
+            Freshly roasted, high-quality beans
+          </li>
+          <li class="flex items-center">
+            <img
+              src="./src/pics/li-dot.png"
+              class="w-7 h-7 object-cover rotate-270"
+              alt=""
+            />Cozy and relaxing atmosphere
+          </li>
+          <li class="flex items-center">
+            <img
+              src="./src/pics/li-dot.png"
+              class="w-7 h-7 object-cover rotate-270"
+              alt=""
+            />Specialty drinks you won’t find elsewhere
+          </li>
+          <li class="flex items-center">
+            <img
+              src="./src/pics/li-dot.png"
+              class="w-7 h-7 object-cover rotate-270"
+              alt=""
+            />
+            Friendly and knowledgeable baristas
+          </li>
+        </ul>
+      </section>
 
+      <!-- BEST SELLERS -->
+      <section id="best-sellers" class="w-[90%] mx-auto">
+        <h2 class="text-2xl font-bold mb-2">Best Sellers</h2>
+        <div class="w-full h-1 bg-gray-200 mb-6"></div>
+
+        <div
+          class="carousel-container max-w-[90%] mx-auto overflow-hidden relative"
+        >
+          <div
+            class="bg-white text-black w-12 h-12 rounded flex justify-center items-center absolute bottom-[50%] left-0 z-40"
+          >
+            <button
+              id="prev"
+              class="text-4xl font-bold mb-1 active:scale-95 transition-all duration-300"
+            >
+              <
+            </button>
+          </div>
+          <div class="track flex transition-transform duration-500 w-[300px]">
+            <div class="items flex-shrink-0 w-[350px] h-[400px]">
+              <img
+                src="./src/pics/hero-image.png"
+                class="w-full h-90 rounded shadow-xl"
+                alt=""
+              />
+            </div>
+            <div class="items flex-shrink-0 w-[350px] h-[400px]">
+              <img
+                src="./src/pics/hero-image.png"
+                class="w-full h-90 rounded shadow-xl"
+                alt=""
+              />
+            </div>
+            <div class="items flex-shrink-0 w-[350px] h-[400px]">
+              <img
+                src="./src/pics/hero-image.png"
+                class="w-full h-90 rounded shadow-xl"
+                alt=""
+              />
+            </div>
+            <div class="items flex-shrink-0 w-[350px] h-[400px]">
+              <img
+                src="./src/pics/hero-image.png"
+                class="w-full h-90 rounded shadow-xl"
+                alt=""
+              />
+            </div>
+            <div class="items flex-shrink-0 w-[350px] h-[400px]">
+              <img
+                src="./src/pics/hero-image.png"
+                class="w-full h-90 rounded shadow-xl"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="bg-white text-black w-12 h-12 rounded flex justify-center items-center absolute bottom-[50%] right-0 z-50"
+          >
+            <button
+              id="next"
+              class="text-4xl font-bold mb-1 active:scale-95 transition-all duration-300"
+            >
+              >
+            </button>
+          </div>
+
+          <a
+            href="./shop.html"
+            id="full-menu"
+            class="mx-auto block rounded text-base active:scale-95 duration-400 transition-all"
+            >View Full Menu</a
+          >
+        </div>
+      </section>
+
+     <section id="new-to-coffee" class="max-w-[90%] mx-auto">
+  <h2 class="text-2xl font-bold mb-2">New To Coffee?</h2>
+  <div class="w-full h-1 bg-gray-200 mb-6"></div>
+  <p class="text-base leading-normal mb-6">
+    New to coffee? Don’t worry! We’ve picked a few drinks that are easy to enjoy
+    and perfect for beginners. Try a smooth latte, a creamy cappuccino, or a
+    refreshing iced coffee. Our baristas can help you make it just how you like.
+  </p>
+
+  <div class="beginner-carousel-container max-w-[90%] mx-auto overflow-hidden relative h-[400px]">
+    
+    <!-- Previous Button -->
+    <div class="flex items-center bg-white justify-center">
+      <button id="new-prev" class="prev absolute top-1/2 left-0 -translate-y-1/2 w-12 h-12 bg-white rounded z-50 text-4xl font-bold">
+        &lt;
+      </button>
+    </div>
+
+    <!-- Track -->
+    <div class="beginner-track flex transition-transform duration-500">
+      <div class="begginer-item flex-shrink-0 w-[350px] h-[400px]">
+        <img src="./src/pics/hero-image.png" class="w-full h-full rounded shadow-xl" alt="" />
+      </div>
+      <div class="begginer-item flex-shrink-0 w-[350px] h-[400px]">
+        <img src="./src/pics/hero-image.png" class="w-full h-full rounded shadow-xl" alt="" />
+      </div>
+      <div class="begginer-item flex-shrink-0 w-[350px] h-[400px]">
+        <img src="./src/pics/hero-image.png" class="w-full h-full rounded shadow-xl" alt="" />
+      </div>
+      <div class="begginer-item flex-shrink-0 w-[350px] h-[400px]">
+        <img src="./src/pics/hero-image.png" class="w-full h-full rounded shadow-xl" alt="" />
+      </div>
+      <div class="begginer-item flex-shrink-0 w-[350px] h-[400px]">
+        <img src="./src/pics/hero-image.png" class="w-full h-full rounded shadow-xl" alt="" />
+      </div>
+      <div class="begginer-item flex-shrink-0 w-[350px] h-[400px]">
+        <img src="./src/pics/hero-image.png" class="w-full h-full rounded shadow-xl" alt="" />
+      </div>
+    </div>
+
+    <!-- Next Button -->
+   <div class="flex justify-center items-center">
+     <button id="new-next" class="absolute top-1/2 right-0 -translate-y-1/2 w-12 h-12 bg-white text-white rounded z-50  text-4xl font-bold">
+        &gt;
+      </button>
+   </div>
+
+   <section id="why-choose-us">
+    
+   </section>
     </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>lucide.createIcons();</script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
