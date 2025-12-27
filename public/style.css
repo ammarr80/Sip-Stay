@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    background-image: url('./pics/hero-image.jpg');
+    background-image: url('pics/hero-image.jpg');
     height: 100vh;
     background-position: left;
     background-size: cover;
