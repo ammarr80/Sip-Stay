@@ -13,7 +13,7 @@ function showSlide(i) {
 
 }
 
-nextBtn.addEventListener("touchstart", () => {
+nextBtn.addEventListener("click", () => {
     index = (index + 1) % items.length;
     showSlide(index);
 });
