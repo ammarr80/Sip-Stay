@@ -80,7 +80,7 @@
           batches for the perfect flavor.
           <span class="font-semibold">We Provide:</span>
         </p>
-        <ul class="text-sm list-disc list-inside space-y-1">
+        <ul class="text-base space-y-3">
           <li class="flex items-center">
             <img
               src="./src/pics/li-dot.png"
@@ -96,14 +96,14 @@
               alt=""
             />Cozy and relaxing atmosphere
           </li>
-          <li class="flex items-center">
+          <li class="flex items-start">
             <img
               src="./src/pics/li-dot.png"
               class="w-7 h-7 object-cover rotate-270"
               alt=""
             />Specialty drinks you won’t find elsewhere
           </li>
-          <li class="flex items-center">
+          <li class="flex items-start">
             <img
               src="./src/pics/li-dot.png"
               class="w-7 h-7 object-cover rotate-270"
@@ -117,7 +117,7 @@
       <!-- BEST SELLERS -->
       <section id="best-sellers" class="w-[90%] mx-auto">
         <div class="flex items-center gap-2 mb-2">
-          <i class="w-6 h-6" data-lucide="trophy"></i>
+          <i class="w-5 h-5" data-lucide="trophy"></i>
           <h2 class="text-2xl font-bold">Best Sellers</h2>
         </div>
         <div class="w-full h-1 bg-gray-200 mb-6"></div>
@@ -125,68 +125,62 @@
         <div
           class="carousel-container max-w-[90%] mx-auto overflow-hidden relative"
         >
-          <div
-            class="bg-white text-black w-12 h-12 rounded flex justify-center items-center absolute bottom-[50%] left-0 z-40"
-          >
+         
             <button
               id="prev"
-              class="text-4xl font-bold mb-1 active:scale-95 transition-all duration-300"
+              class=" w-12 h-12 rounded flex justify-center items-center absolute bottom-[50%] left-2 z-40 text-4xl font-bold active:scale-90 transition-all duration-400"
             >
               &lt;
             </button>
-          </div>
           <div class="track flex transition-transform duration-500 w-[300px]">
             <div class="items flex-shrink-0 w-[350px] h-[400px]">
               <img
                 src="./src/pics/hero-image.png"
-                class="w-full h-90 rounded shadow-xl"
+                class="w-full h-100 rounded shadow-xl"
                 alt=""
               />
             </div>
             <div class="items flex-shrink-0 w-[350px] h-[400px]">
               <img
                 src="./src/pics/hero-image.png"
-                class="w-full h-90 rounded shadow-xl"
+                class="w-full h-100 rounded shadow-xl"
                 alt=""
               />
             </div>
             <div class="items flex-shrink-0 w-[350px] h-[400px]">
               <img
                 src="./src/pics/hero-image.png"
-                class="w-full h-90 rounded shadow-xl"
+                class="w-full h-100 rounded shadow-xl"
                 alt=""
               />
             </div>
             <div class="items flex-shrink-0 w-[350px] h-[400px]">
               <img
                 src="./src/pics/hero-image.png"
-                class="w-full h-90 rounded shadow-xl"
+                class="w-full h-100 rounded shadow-xl"
                 alt=""
               />
             </div>
             <div class="items flex-shrink-0 w-[350px] h-[400px]">
               <img
                 src="./src/pics/hero-image.png"
-                class="w-full h-90 rounded shadow-xl"
+                class="w-full h-100 rounded shadow-xl"
                 alt=""
               />
             </div>
           </div>
-          <div
-            class="bg-white text-black w-12 h-12 rounded flex justify-center items-center absolute bottom-[50%] right-0 z-50"
-          >
+          
             <button
               id="next"
-              class="text-4xl font-bold mb-1 active:scale-95 transition-all duration-300"
+              class="flex justify-center w-12 h-12 items-center rounded absolute bottom-[50%] right-2 z-50 text-4xl font-bold active:scale-90 transition-all duration-400"
             >
               &gt;
             </button>
-          </div>
 
           <a
             href="./shop.html"
             id="full-menu"
-            class="mx-auto block rounded text-base active:scale-95 duration-400 mb-2 transition-all"
+            class="mx-auto mt-8 block rounded text-base active:scale-90 duration-400 mb-2 transition-all"
             >View Full Menu</a
           >
         </div>
@@ -209,12 +203,13 @@
           class="beginner-carousel-container max-w-[90%] mx-auto overflow-hidden relative h-[400px]"
         >
           <!-- Previous Button -->
-          <button
-            id="new-prev"
-            class="prev absolute top-1/2 left-0 -translate-y-1/2 w-12 h-12 bg-white rounded z-50 text-4xl flex items-center bg-white justify-center font-bold"
-          >
-            &lt;
-          </button>
+          
+           <button
+              id="new-prev"
+              class="w-12 h-12 rounded flex justify-center items-center absolute bottom-[40%] left-2 z-40 text-4xl font-bold mb-1 active:scale-90 transition-all duration-400"
+            >
+              &lt;
+            </button>
 
           <!-- Track -->
           <div class="beginner-track flex transition-transform duration-500">
@@ -264,11 +259,11 @@
 
           <!-- Next Button -->
           <button
-            id="new-next"
-            class="absolute top-1/2 right-0 -translate-y-1/2 w-12 h-12 bg-white text-white rounded z-50 flex justify-center items-center text-4xl font-bold"
-          >
-            &gt;
-          </button>
+              id="new-next"
+              class="flex justify-center w-12 h-12 items-center rounded absolute bottom-[40%] right-2 z-50 text-4xl font-bold active:scale-90 transition-all duration-400"
+            >
+              &gt;
+            </button>
         </div>
       </section>
 
@@ -285,7 +280,7 @@
         <div class="flex flex-col sm:flex-row gap-6 justify-center">
           <!-- Card 1 -->
           <div
-            class="flex flex-col items-center bg-brand text-white px-6 py-20 rounded-md shadow-lg text-center relative overflow-hidden"
+            class="flex flex-col items-center bg-brand text-white px-6 py-30 rounded-md shadow-lg text-center relative overflow-hidden"
           >
             <!-- Faint big background icon -->
             <i
@@ -303,7 +298,7 @@
 
           <!-- Card 2 -->
           <div
-            class="flex flex-col items-center bg-brand text-white px-6 py-20 rounded-md shadow-lg text-center relative overflow-hidden"
+            class="flex flex-col items-center bg-brand text-white px-6 py-30 rounded-md shadow-lg text-center relative overflow-hidden"
           >
             <i
               class="w-32 h-32 opacity-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -320,7 +315,7 @@
 
           <!-- Card 3 -->
           <div
-            class="flex flex-col items-center bg-brand text-white px-6 py-20 rounded-md shadow-lg text-center relative overflow-hidden"
+            class="flex flex-col items-center bg-brand text-white px-6 py-30 rounded-md shadow-lg text-center relative overflow-hidden"
           >
             <i
               class="w-32 h-32 opacity-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"

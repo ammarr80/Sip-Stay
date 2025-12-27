@@ -257,3 +257,13 @@ border: 1px solid #ccc;  /* subtle border to define edges */
     background-color: #fff;
     color: #000;
 }
+
+#next {
+    background-color: #fff;
+    color: #000;
+}
+
+#prev {
+    background-color: #fff;
+    color: #000;
+}
